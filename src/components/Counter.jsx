@@ -35,7 +35,7 @@ const Counter = () => {
                 {/*itt jelenjen meg egy kep aminek az indexét az nr adja meg */}
 
             </div>
-            <div className='d-flex gap-2 mb-3 jusify-content-center'>
+            <div className='d-flex gap-2 mb-3 justify-content-center'>
                 {nr > 0 && <Myimg nr={nr} loading={loading} setLoading={setLoading}/>}
             </div>
         </div>

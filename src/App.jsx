@@ -11,7 +11,7 @@ function App() {
     <>
       <div className='app'>
         <h1 style={{textAlign:"center"}}>First js app</h1>
-        <div className='d-flex gap-2 mb-3 jusify-content-center'>
+        <div className='d-flex gap-2 mb-3 justify-content-center'>
           <Button onClick={()=>setSelected('counter')} color="primary" outline={selected!='counter'}>
             Counter
           </Button>{' '}
