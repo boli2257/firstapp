@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Button } from 'reactstrap'
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { RiEmotionUnhappyLine } from "react-icons/ri";
+import { Dice } from './Dice';
+
 const Toggle = () => {
   const [ishappy,setishappy] = useState(true)
   return (
@@ -13,6 +15,7 @@ const Toggle = () => {
         <RiEmotionUnhappyLine style={{fontSize:"3rem", backgroundColor:"gray"}}/>
       }
       </div>
+      <Dice/>
     </div>
   )
 }

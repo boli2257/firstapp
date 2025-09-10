@@ -6,8 +6,10 @@ import { useState } from 'react';
 import Toggle from './components/Toggle';
 import ToDo from './components/ToDo';
 import { Gallery } from './components/Gallery';
+import { Frameworks } from './components/Frameworks';
+import RandomQuote from './components/RandomQuote';
 function App() {
-    const [selected, setSelected]= useState(" ")
+    const [selected, setSelected]= useState(null)
   return (
     <>
       <div className='app'>
@@ -28,11 +30,14 @@ function App() {
           <Button onClick={()=>setSelected('gallery')} color="success" outline={selected!='gallery'}>
             Gallery
           </Button>{' '}
+          
         </div>
         {selected == "counter" && <Counter/>}
       {selected == "toggle" && <Toggle/>}
       {selected == "todo" && <ToDo/>}
       {selected == "gallery" && <Gallery/>}
+      {selected == null && <Frameworks/>}
+      {selected == null && <RandomQuote/>}
       </div>
       
     </>
